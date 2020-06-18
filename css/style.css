@@ -1,10 +1,11 @@
-* {
+/* * {
   opacity: 1;
-  visibility: visibile; }
+  visibility: visibile;
+}
 
 * {
-  border: 1px solid #f00; }
-
+  border: 1px solid #f00;
+} */
 /*********************
 BREAKPOINTS
 *********************/
