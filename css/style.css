@@ -215,7 +215,7 @@ body {
   @media (max-width: 44.5em) {
     .links.small-link-margin-grid {
       font-size: 12px;
-      width: 100px;
+      width: 125px;
       margin: 0 auto;
       margin-bottom: 20px;
       /*  width: 40%; */ } }
