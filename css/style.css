@@ -23,6 +23,20 @@ html {
 body {
   box-sizing: border-box; }
 
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+  @media (max-width: 21.5em) {
+    .row {
+      margin-right: 0px !important; } }
+  @media (max-width: 44.5em) {
+    .row {
+      margin-right: 0px !important; } }
+
 /*Browser Reset  Starting clean. */
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;

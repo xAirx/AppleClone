@@ -74,6 +74,22 @@ body {
   box-sizing: border-box;
 }
 
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @include breakpoint(minimobileonly) {
+    margin-right: 0px !important;
+  }
+  @include breakpoint(mobileonly) {
+    margin-right: 0px !important;
+  }
+}
+
 /*Browser Reset  Starting clean. */
 
 .navbar-collapse {
