@@ -79,16 +79,16 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
+  margin-right: 0;
   margin-left: -15px;
 
-  @include breakpoint(minimobileonly) {
+  /* @include breakpoint(minimobileonly) {
     margin-right: 0px !important;
     margin-left: -4px !important;
   }
   @include breakpoint(mobileonly) {
     margin-right: 0px !important;
-  }
+  } */
 }
 
 /*Browser Reset  Starting clean. */
@@ -113,6 +113,10 @@ body {
   line-height: 0;
 }
 
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 .product {
   padding-top: 50px;
   text-align: center;
@@ -140,7 +144,7 @@ body {
     background-color: #131218;
     color: white;
     position: relative;
-    height: 596px;
+    height: 555px;
     padding-top: 0;
     text-align: center;
     margin-bottom: 10px;
@@ -263,17 +267,21 @@ body {
 
 .small {
   padding-top: 40px;
-  margin: 0 0 10px 10px;
   text-align: center;
 
   &-intro {
-    height: 98%;
+    height: 100%;
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
     text-align: center;
     background-color: #f9f0eb;
+
+    h4 {
+      margin-bottom: 448px;
+    }
     @include breakpoint(minimobileonly) {
-      margin: 0px -9px 10px 7px;
+      /*       margin: 0px -9px 10px 7px;
+ */
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
@@ -282,11 +290,14 @@ body {
 
   &-iphone8 {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
+
     text-align: center;
     background-color: #f9f0eb;
     @include breakpoint(minimobileonly) {
-      margin: 0px -9px 10px 7px;
+      /*       margin: 0px -9px 10px 7px;
+ */
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
@@ -294,39 +305,48 @@ body {
   }
   &-airpods {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
+
     text-align: center;
     background-color: #f9f9f9;
     @include breakpoint(minimobileonly) {
-      margin: 0px -9px 10px 7px;
-      padding-bottom: 3px;
+      /*       margin: 0px -9px 10px 7px;
+ */
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
-      padding-bottom: 3px;
     }
   }
 
   &-watch {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
+
     text-align: center;
     background-color: #eeeeee;
     @include breakpoint(minimobileonly) {
-      margin: 0px 7px 10px -8px;
+      /*  margin: 0px 7px 10px -8px; */
     }
     @include breakpoint(mobileonly) {
-      /*  margin: 0px 7px 10px -8px; */
+      /* margin: 0px 7px 10px -8px; */
     }
   }
 
   &-photography {
-    height: 97%;
+    height: 100%;
+
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
     text-align: center;
+
+    h4 {
+      margin-bottom: 448px;
+    }
+
     @include breakpoint(minimobileonly) {
-      margin: 0px 7px 10px -8px;
+      /*       margin: 0px 7px 10px -8px; */
     }
     @include breakpoint(mobileonly) {
       /* margin: 0px 7px 10px -8px; */
@@ -366,23 +386,21 @@ body {
 
 .product-small-dark {
   color: white;
-  padding-top: 416px;
-  margin: 0 0 10px 10px;
+  padding-top: 417px;
   text-align: center;
 
   padding-bottom: 60px;
   @include breakpoint(minimobileonly) {
     margin: 0px 7px 10px -7px;
-    padding-bottom: 20px;
   }
   @include breakpoint(mobileonly) {
     /* margin: 0px 7px 10px -7px; */
-    padding-bottom: 20px;
   }
 
   h3 {
     font-size: 35px;
     font-weight: bold;
+    padding-top: 35px;
     @include breakpoint(minimobileonly) {
       font-size: 12px;
       margin-top: 10px;
@@ -565,4 +583,15 @@ body {
 
 .mobilecontentimage {
   margin-bottom: -40px;
+}
+
+@include breakpoint(minimobileonly) {
+  .col-6 {
+    width: 100% !important;
+  }
+}
+@include breakpoint(mobileonly) {
+  .col-6 {
+    width: 100% !important;
+  }
 }

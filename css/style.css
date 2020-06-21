@@ -30,15 +30,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
-  @media (max-width: 21.5em) {
-    .row {
-      margin-right: 0px !important;
-      margin-left: -4px !important; } }
-  @media (max-width: 44.5em) {
-    .row {
-      margin-right: 0px !important; } }
+  margin-right: 0;
+  margin-left: -15px;
+  /* @include breakpoint(minimobileonly) {
+    margin-right: 0px !important;
+    margin-left: -4px !important;
+  }
+  @include breakpoint(mobileonly) {
+    margin-right: 0px !important;
+  } */ }
 
 /*Browser Reset  Starting clean. */
 .navbar-collapse {
@@ -57,6 +57,10 @@ body {
 .fa.fa-apple.apple-logo {
   font-size: 21px;
   line-height: 0; }
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap; }
 
 .product {
   padding-top: 50px;
@@ -79,7 +83,7 @@ body {
     background-color: #131218;
     color: white;
     position: relative;
-    height: 596px;
+    height: 555px;
     padding-top: 0;
     text-align: center;
     margin-bottom: 10px;
@@ -174,63 +178,70 @@ body {
 
 .small {
   padding-top: 40px;
-  margin: 0 0 10px 10px;
   text-align: center; }
   .small-intro {
-    height: 98%;
+    height: 100%;
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
     text-align: center;
     background-color: #f9f0eb; }
+    .small-intro h4 {
+      margin-bottom: 448px; }
     @media (max-width: 21.5em) {
       .small-intro {
-        margin: 0px -9px 10px 7px; } }
+        /*       margin: 0px -9px 10px 7px;
+ */ } }
     @media (max-width: 44.5em) {
       .small-intro {
         /*  margin: 0px -9px 10px 7px; */ } }
   .small-iphone8 {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
     text-align: center;
     background-color: #f9f0eb; }
     @media (max-width: 21.5em) {
       .small-iphone8 {
-        margin: 0px -9px 10px 7px; } }
+        /*       margin: 0px -9px 10px 7px;
+ */ } }
     @media (max-width: 44.5em) {
       .small-iphone8 {
         /*  margin: 0px -9px 10px 7px; */ } }
   .small-airpods {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
     text-align: center;
     background-color: #f9f9f9; }
     @media (max-width: 21.5em) {
       .small-airpods {
-        margin: 0px -9px 10px 7px;
-        padding-bottom: 3px; } }
+        /*       margin: 0px -9px 10px 7px;
+ */ } }
     @media (max-width: 44.5em) {
       .small-airpods {
-        /*  margin: 0px -9px 10px 7px; */
-        padding-bottom: 3px; } }
+        /*  margin: 0px -9px 10px 7px; */ } }
   .small-watch {
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
+    height: 100%;
     text-align: center;
     background-color: #eeeeee; }
     @media (max-width: 21.5em) {
       .small-watch {
-        margin: 0px 7px 10px -8px; } }
+        /*  margin: 0px 7px 10px -8px; */ } }
     @media (max-width: 44.5em) {
       .small-watch {
-        /*  margin: 0px 7px 10px -8px; */ } }
+        /* margin: 0px 7px 10px -8px; */ } }
   .small-photography {
-    height: 97%;
+    height: 100%;
     padding-top: 40px;
-    margin: 0 0 10px 10px;
+    /*    */
     text-align: center; }
+    .small-photography h4 {
+      margin-bottom: 448px; }
     @media (max-width: 21.5em) {
       .small-photography {
-        margin: 0px 7px 10px -8px; } }
+        /*       margin: 0px 7px 10px -8px; */ } }
     @media (max-width: 44.5em) {
       .small-photography {
         /* margin: 0px 7px 10px -8px; */ } }
@@ -260,21 +271,19 @@ body {
 
 .product-small-dark {
   color: white;
-  padding-top: 416px;
-  margin: 0 0 10px 10px;
+  padding-top: 417px;
   text-align: center;
   padding-bottom: 60px; }
   @media (max-width: 21.5em) {
     .product-small-dark {
-      margin: 0px 7px 10px -7px;
-      padding-bottom: 20px; } }
+      margin: 0px 7px 10px -7px; } }
   @media (max-width: 44.5em) {
     .product-small-dark {
-      /* margin: 0px 7px 10px -7px; */
-      padding-bottom: 20px; } }
+      /* margin: 0px 7px 10px -7px; */ } }
   .product-small-dark h3 {
     font-size: 35px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-top: 35px; }
     @media (max-width: 21.5em) {
       .product-small-dark h3 {
         font-size: 12px;
@@ -403,3 +412,11 @@ body {
 
 .mobilecontentimage {
   margin-bottom: -40px; }
+
+@media (max-width: 21.5em) {
+  .col-6 {
+    width: 100% !important; } }
+
+@media (max-width: 44.5em) {
+  .col-6 {
+    width: 100% !important; } }
