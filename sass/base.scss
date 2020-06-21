@@ -267,6 +267,7 @@ body {
   text-align: center;
 
   &-intro {
+    height: 98%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
@@ -298,9 +299,11 @@ body {
     background-color: #f9f9f9;
     @include breakpoint(minimobileonly) {
       margin: 0px -9px 10px 7px;
+      padding-bottom: 14px;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
+      padding-bottom: 14px;
     }
   }
 
@@ -318,6 +321,7 @@ body {
   }
 
   &-photography {
+    height: 98%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;

@@ -177,6 +177,7 @@ body {
   margin: 0 0 10px 10px;
   text-align: center; }
   .small-intro {
+    height: 98%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
@@ -205,10 +206,12 @@ body {
     background-color: #f9f9f9; }
     @media (max-width: 21.5em) {
       .small-airpods {
-        margin: 0px -9px 10px 7px; } }
+        margin: 0px -9px 10px 7px;
+        padding-bottom: 14px; } }
     @media (max-width: 44.5em) {
       .small-airpods {
-        /*  margin: 0px -9px 10px 7px; */ } }
+        /*  margin: 0px -9px 10px 7px; */
+        padding-bottom: 14px; } }
   .small-watch {
     padding-top: 40px;
     margin: 0 0 10px 10px;
@@ -221,6 +224,7 @@ body {
       .small-watch {
         /*  margin: 0px 7px 10px -8px; */ } }
   .small-photography {
+    height: 98%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center; }
