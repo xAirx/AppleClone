@@ -207,11 +207,11 @@ body {
     @media (max-width: 21.5em) {
       .small-airpods {
         margin: 0px -9px 10px 7px;
-        padding-bottom: 14px; } }
+        padding-bottom: 3px; } }
     @media (max-width: 44.5em) {
       .small-airpods {
         /*  margin: 0px -9px 10px 7px; */
-        padding-bottom: 14px; } }
+        padding-bottom: 3px; } }
   .small-watch {
     padding-top: 40px;
     margin: 0 0 10px 10px;
@@ -224,7 +224,7 @@ body {
       .small-watch {
         /*  margin: 0px 7px 10px -8px; */ } }
   .small-photography {
-    height: 98%;
+    height: 97%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center; }

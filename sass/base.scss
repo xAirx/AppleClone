@@ -299,11 +299,11 @@ body {
     background-color: #f9f9f9;
     @include breakpoint(minimobileonly) {
       margin: 0px -9px 10px 7px;
-      padding-bottom: 14px;
+      padding-bottom: 3px;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
-      padding-bottom: 14px;
+      padding-bottom: 3px;
     }
   }
 
@@ -321,7 +321,7 @@ body {
   }
 
   &-photography {
-    height: 98%;
+    height: 97%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
