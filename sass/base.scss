@@ -124,10 +124,10 @@ body {
     background-color: #f9f9f9f9;
     padding-top: 157px;
 
-    @include breakpoint(minimobileonly) {
+    @include breakpoint(mobileonly) {
       padding-top: 50px;
     }
-    @include breakpoint(mobileonly) {
+    @include breakpoint(minimobileonly) {
       padding-top: 50px;
     }
   }
@@ -147,11 +147,11 @@ body {
     padding-right: 0;
     padding-left: 0;
 
-    @include breakpoint(minimobileonly) {
-      height: 32%;
-    }
     @include breakpoint(mobileonly) {
-      height: 32%;
+      height: 44%;
+    }
+    @include breakpoint(minimobileonly) {
+      height: 64%;
     }
   }
 
