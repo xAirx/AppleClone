@@ -120,6 +120,42 @@ body {
   padding-right: 20px;
   padding-left: 20px;
 
+  &.iphone-x {
+    background-color: #f9f9f9f9;
+    padding-top: 157px;
+
+    @include breakpoint(minimobileonly) {
+      padding-top: 50px;
+    }
+    @include breakpoint(mobileonly) {
+      padding-top: 50px;
+    }
+  }
+
+  .ipad {
+    background-color: #f9f9f9f9;
+  }
+
+  &.macbookpro {
+    background-color: #131218;
+    color: white;
+    position: relative;
+    height: 596px;
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.ipad {
+    background-color: #f5f5f5;
+  }
+
+  .links.dark a {
+    color: white;
+  }
+
   h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -154,37 +190,6 @@ body {
 
 .fa.fa-angle-right {
   margin-left: 8px;
-}
-
-.product {
-  &.iphone-x {
-    background-color: #f9f9f9f9;
-    padding-top: 157px;
-
-    @include breakpoint(minimobileonly) {
-      padding-top: 50px;
-    }
-    @include breakpoint(mobileonly) {
-      padding-top: 50px;
-    }
-  }
-
-  .ipad {
-    background-color: #f9f9f9f9;
-  }
-
-  &.macbookpro {
-    background-color: #131218;
-    color: white;
-  }
-
-  &.ipad {
-    background-color: #f5f5f5;
-  }
-
-  .links.dark a {
-    color: white;
-  }
 }
 
 .links {
@@ -474,5 +479,48 @@ body {
 @media (min-width: 768px) {
   .page-footer .region {
     margin-bottom: 0;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+  overflow: hidden;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &--hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    overflow: hidden;
+    margin-top: -202px;
+  }
+  &--section {
+    /*     position: absolute;
+ */
+    top: 0;
+    left: 0;
+    /*     height: 580px;
+ */
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+    overflow: hidden;
+    /*     margin-top: -202px;
+ */
   }
 }
