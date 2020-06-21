@@ -365,15 +365,15 @@ body {
   padding-top: 416px;
   margin: 0 0 10px 10px;
   text-align: center;
-  height: 98%;
+
   padding-bottom: 60px;
   @include breakpoint(minimobileonly) {
     margin: 0px 7px 10px -7px;
-    height: 98%;
+    padding-bottom: 20px;
   }
   @include breakpoint(mobileonly) {
     /* margin: 0px 7px 10px -7px; */
-    height: 98%;
+    padding-bottom: 20px;
   }
 
   h3 {
