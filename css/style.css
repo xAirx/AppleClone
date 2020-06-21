@@ -85,6 +85,12 @@ body {
     margin-bottom: 10px;
     padding-right: 0;
     padding-left: 0; }
+    @media (max-width: 21.5em) {
+      .product.macbookpro {
+        height: 32%; } }
+    @media (max-width: 44.5em) {
+      .product.macbookpro {
+        height: 32%; } }
   .product.ipad {
     background-color: #f5f5f5; }
   .product .links.dark a {
@@ -386,5 +392,28 @@ body {
     z-index: -1;
     opacity: 1;
     overflow: hidden;
-    /*     margin-top: -202px;
- */ }
+    /*     margin-top: -202px; */ }
+    @media (max-width: 21.5em) {
+      .bg-video--section {
+        display: none !important; } }
+    @media (max-width: 44.5em) {
+      .bg-video--section {
+        display: none !important; } }
+
+.macbookpromobilecontent {
+  display: none !important; }
+  .macbookpromobilecontent h1 {
+    padding-top: 80px; }
+  .macbookpromobilecontent .links.small-link-margin-dark {
+    margin-bottom: 40px; }
+  .macbookpromobilecontent img {
+    margin-bottom: -40px; }
+  @media (max-width: 21.5em) {
+    .macbookpromobilecontent {
+      display: block !important; } }
+  @media (max-width: 44.5em) {
+    .macbookpromobilecontent {
+      display: block !important; } }
+
+.mobilecontentimage {
+  margin-bottom: -40px; }

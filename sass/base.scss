@@ -146,6 +146,13 @@ body {
     margin-bottom: 10px;
     padding-right: 0;
     padding-left: 0;
+
+    @include breakpoint(minimobileonly) {
+      height: 32%;
+    }
+    @include breakpoint(mobileonly) {
+      height: 32%;
+    }
   }
 
   &.ipad {
@@ -538,7 +545,37 @@ body {
     z-index: -1;
     opacity: 1;
     overflow: hidden;
-    /*     margin-top: -202px;
- */
+    /*     margin-top: -202px; */
+    @include breakpoint(minimobileonly) {
+      display: none !important;
+    }
+    @include breakpoint(mobileonly) {
+      display: none !important;
+    }
   }
+}
+
+.macbookpromobilecontent {
+  h1 {
+    padding-top: 80px;
+  }
+
+  .links.small-link-margin-dark {
+    margin-bottom: 40px;
+  }
+
+  img {
+    margin-bottom: -40px;
+  }
+  display: none !important;
+  @include breakpoint(minimobileonly) {
+    display: block !important;
+  }
+  @include breakpoint(mobileonly) {
+    display: block !important;
+  }
+}
+
+.mobilecontentimage {
+  margin-bottom: -40px;
 }
