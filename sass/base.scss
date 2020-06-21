@@ -148,10 +148,10 @@ body {
     padding-left: 0;
 
     @include breakpoint(mobileonly) {
-      height: 44%;
+      height: 450px;
     }
     @include breakpoint(minimobileonly) {
-      height: 64%;
+      height: 450px;
     }
   }
 
@@ -268,17 +268,14 @@ body {
 
   &-intro {
     padding-top: 40px;
-    height: 98%;
     margin: 0 0 10px 10px;
     text-align: center;
     background-color: #f9f0eb;
     @include breakpoint(minimobileonly) {
       margin: 0px -9px 10px 7px;
-      height: 98%;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
-      height: 98%;
     }
   }
 
@@ -286,30 +283,24 @@ body {
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
-    height: 98%;
     background-color: #f9f0eb;
     @include breakpoint(minimobileonly) {
       margin: 0px -9px 10px 7px;
-      height: 98%;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
-      height: 98%;
     }
   }
   &-airpods {
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
-    height: 98%;
     background-color: #f9f9f9;
     @include breakpoint(minimobileonly) {
       margin: 0px -9px 10px 7px;
-      height: 98%;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px -9px 10px 7px; */
-      height: 98%;
     }
   }
 
@@ -317,30 +308,23 @@ body {
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
-    height: 98%;
     background-color: #eeeeee;
     @include breakpoint(minimobileonly) {
       margin: 0px 7px 10px -8px;
-      height: 98%;
     }
     @include breakpoint(mobileonly) {
       /*  margin: 0px 7px 10px -8px; */
-      height: 98%;
     }
   }
 
   &-photography {
-    height: 100%;
     padding-top: 40px;
     margin: 0 0 10px 10px;
     text-align: center;
-    height: 98%;
     @include breakpoint(minimobileonly) {
-      height: 98%;
       margin: 0px 7px 10px -8px;
     }
     @include breakpoint(mobileonly) {
-      height: 98%;
       /* margin: 0px 7px 10px -8px; */
     }
   }
@@ -350,11 +334,11 @@ body {
   font-size: 18px;
   font-weight: 200;
   margin-top: -6px;
+  margin-bottom: 20px !important;
   /*   margin-bottom: 27px; */
 
   @include breakpoint(mobileonly) {
     font-size: 12px;
-    width: 125px;
 
     margin: 0 auto;
 
@@ -364,7 +348,6 @@ body {
     font-size: 11px;
 
     /*  width: 58%; */
-    width: 100px;
   }
 }
 
