@@ -327,6 +327,24 @@ BREAKPOINTS
 html {
   font-size: 62.5%; }
 
+html {
+  /* font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% */ }
+  @media (max-width: 21.5em) {
+    html {
+      font-size: 36.25%; } }
+  @media (max-width: 44.5em) {
+    html {
+      font-size: 46.25%; } }
+  @media (max-width: 44.5em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 50em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 70em) {
+    html {
+      font-size: 62.5%; } }
+
 body {
   box-sizing: border-box; }
 
