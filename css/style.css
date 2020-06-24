@@ -325,9 +325,6 @@ BREAKPOINTS
   /* changing the box model so that the borders and paddings are no longer added. */ }
 
 html {
-  font-size: 62.5%; }
-
-html {
   /* font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% */ }
   @media (max-width: 21.5em) {
     html {
@@ -344,6 +341,11 @@ html {
   @media (max-width: 70em) {
     html {
       font-size: 62.5%; } }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px; }
 
 body {
   box-sizing: border-box; }
@@ -493,11 +495,11 @@ body {
     @media (max-width: 21.5em) {
       .product-small h4 {
         font-size: 13px;
-        font-weight: bold; } }
+        /* font-weight: bold; */ } }
     @media (max-width: 44.5em) {
       .product-small h4 {
         font-size: 13px;
-        font-weight: bold; } }
+        /* font-weight: bold; */ } }
 
 .small {
   padding-top: 40px;

@@ -418,11 +418,6 @@ BREAKPOINTS
 }
 
 html {
-  // THIS DEFINES WHAT 1 REM IS;;
-  font-size: 62.5%;
-}
-
-html {
   // This defines what 1rem is
   /* font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5% */
 
@@ -445,6 +440,12 @@ html {
   @include breakpoint(desktop) {
     font-size: 62.5%; //1rem = 12, 12/16
   }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 body {
@@ -633,11 +634,11 @@ body {
     margin-bottom: 14px;
     @include breakpoint(minimobileonly) {
       font-size: 13px;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
     @include breakpoint(mobileonly) {
       font-size: 13px;
-      font-weight: bold;
+      /* font-weight: bold; */
     }
   }
 }
