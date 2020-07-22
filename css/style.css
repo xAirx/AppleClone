@@ -745,3 +745,6 @@ body {
 @media (max-width: 44.5em) {
   .col-6 {
     width: 100% !important; } }
+
+.fa.fa-apple.apple-logo {
+  margin-right: 70px; }
